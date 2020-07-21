@@ -12,4 +12,19 @@
  *
  *= require_tree .
  *= require_self
+
  */
+
+ /* --- Import Components stylesheets --- */
+ @import url("components/avatar.scss");
+
+/* [...] */
+
+
+ body {
+ 	background-color: red;
+ 	font-family: monospace;
+ 	line-height: 1.6;
+ 	color: white;
+ 	margin: 40px;
+ }
