@@ -1,9 +1,6 @@
 .img-circle {
-	width: 240px;
-	height: 240px;
-	border-radius: 120px;
+	display: none;
+	width: 100px;
+	border-radius: 100%;
 }
 
-.img-circle:hover {
-	transform: rotate(180deg);
-}

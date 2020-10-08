@@ -10,9 +10,43 @@ p {
     margin-inline-end: 0px;
 }
 
-.box {
-    width: 400px;
-    height: 250px;
-    float: left;
-    padding: 0px 40px 80px 0px;
+h1 {
+	font-size: 22px;
 }
+
+.item {
+    width: 400px;
+    height: 300px;
+    float: left;
+}
+
+.item-b {
+  grid-column: 3;
+  grid-row: 2 / 3;
+}
+
+
+.container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-column: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+@media(min-width: 300px) {
+    body {
+      background-size: none;
+    }
+}
+
+@media(max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .item-b {
+    grid-column: 1;
+    grid-row: 2 / 3;
+  }
+}
+
+
